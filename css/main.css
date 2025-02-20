@@ -61,7 +61,8 @@ nav {
 }
 
 .step__image {
-    width: 50px;
+    width: 100%;
+    max-width: 80px;
 }
 
 .step__title {
@@ -69,4 +70,42 @@ nav {
 
 }
 
+@media (min-width: 900px) {
+    body {
+        padding: 2vw;
+    }
 
+    .nav-mobile {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .section-how__title {
+        text-transform: uppercase;
+    }
+
+    .section-how {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .step {
+        padding: 15px;
+    }
+}
+
+.step p {
+    padding: 10px;
+    font-weight: 100;
+}
